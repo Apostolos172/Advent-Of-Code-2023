@@ -9,7 +9,7 @@ import static com.apostolos172.adventofcode2023.supportive.Util.getData;
 public class Day1 {
     public static void main(String[] args) {
 
-        var data = getData("day1/data2.txt");
+        var data = getData("day1/data.txt");
         assert data != null;
 
         solvePart1(data);
