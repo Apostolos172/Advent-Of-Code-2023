@@ -20,9 +20,6 @@ public class Day1 {
         var dataRows = data.split("\\n");
         var sum = Arrays.stream(dataRows)
                 .map(Row::new)
-//                .map(row -> row.replaceNumberWordsWithRealNumbers())
-//                .map(s -> RegExUtils.removeAll(s, "[^\\d.]"))
-//                .mapToInt(s -> Integer.parseInt("%s%s".formatted(s.charAt(0), s.charAt(s.length() - 1))))
                 .mapToInt(s -> Integer.parseInt("%s%s".formatted(s.getFirstDigit(), s.getLastDigit())))
                 .sum();
         System.out.println(sum);
